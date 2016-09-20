@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :answers
-  resources :questions
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :answers, only: [:index, :show]
+  resources :games, only: [:create], param: :slug
+
+  root to: "home#index"
 end

@@ -10,7 +10,6 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'figaro'
-gem 'devise'
 gem 'omniauth'
 
 group :development, :test do
