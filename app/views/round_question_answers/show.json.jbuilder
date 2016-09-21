@@ -1,0 +1,1 @@
+json.partial! "round_question_answers/round_question_answer", round_question_answer: @round_question_answer

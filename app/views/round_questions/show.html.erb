@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Round:</strong>
+  <%= @round_question.round_id %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @round_question.question_id %>
+</p>
+
+<%= link_to 'Edit', edit_round_question_path(@round_question) %> |
+<%= link_to 'Back', round_questions_path %>

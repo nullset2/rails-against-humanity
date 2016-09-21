@@ -1,0 +1,2 @@
+class RoundQuestionAnswer < ApplicationRecord
+end

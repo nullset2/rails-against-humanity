@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :round_question_answers
+  resources :player_cards
+  resources :round_questions
+  resources :rounds
+  resources :game_entries
   get 'omniauth_callbacks/google_oauth2'
   get 'omniauth_callbacks/facebook'
   devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }

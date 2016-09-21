@@ -1,0 +1,1 @@
+json.array! @round_question_answers, partial: 'round_question_answers/round_question_answer', as: :round_question_answer

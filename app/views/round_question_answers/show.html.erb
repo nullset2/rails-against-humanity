@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Round question:</strong>
+  <%= @round_question_answer.round_question_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @round_question_answer.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_round_question_answer_path(@round_question_answer) %> |
+<%= link_to 'Back', round_question_answers_path %>
