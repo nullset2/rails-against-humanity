@@ -15,6 +15,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
+gem 'bootstrap', '~> 4.0.0.alpha4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
