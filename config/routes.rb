@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  get 'omniauth_callbacks/google_oauth2'
+  get 'omniauth_callbacks/facebook'
+  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
   resources :answers, only: [:index, :show]
   resources :games, only: [:create], param: :slug
 
