@@ -1,24 +1,15 @@
-# README
+# rails-against-humanity
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+¯\_(ツ)_/¯
 
-Things you may want to cover:
+Has oauth authentication implemented with google and facebook --please provide the following environment variables if you want to mount this on your server:
 
-* Ruby version
+`FACEBOOK_API_KEY`
+`FACEBOOK_API_SECRET`
+`GOOGLE_API_KEY`
+`GOOGLE_API_SECRET`
 
-* System dependencies
+MIT license
 
-* Configuration
+No copyright infringement intended at all. 100 percent free. Chill out.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
