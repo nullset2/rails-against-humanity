@@ -18,6 +18,7 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'apartment'
 gem 'pry-rails'
 gem 'pry-byebug'
+gem 'ffaker'
 
 group :development, :test do
   gem 'byebug', platform: :mri
