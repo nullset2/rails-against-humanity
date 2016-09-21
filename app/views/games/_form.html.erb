@@ -12,11 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :slug %>
-    <%= f.text_field :slug %>
+      <span>Your game will be hosted at: http://railsagainsthumanity.co/<%= game.slug %></span>
   </div>
 
+
+  <strong><span>Send it to your friends to get started!</span></strong>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Alright, let's go."%>
   </div>
 <% end %>
