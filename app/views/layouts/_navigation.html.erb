@@ -2,9 +2,14 @@
     <a class="navbar-brand" href="#">RAH</a>
     <ul class="nav navbar-nav">
         <div class="pull-xs-right">
-            <div>Sign in: <%= link_to "Google", user_google_oauth2_omniauth_authorize_path, class: "btn btn-outline-secondary"%>
-            <%= link_to "Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-outline-secondary"%>
-            </div>
+            <% if user_signed_in? %>
+                <div><%= "Hello #{current_user.nickname}, ready to rock? " %>
+                <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-outline-secondary", method: :delete %></div>
+            <% else %>
+                <div>Sign in: <%= link_to "Google", user_google_oauth2_omniauth_authorize_path, class: "btn btn-outline-secondary"%>
+                <%= link_to "Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-outline-secondary"%>
+                </div>
+            <% end %>
         </div>
     </ul>
 </nav>
