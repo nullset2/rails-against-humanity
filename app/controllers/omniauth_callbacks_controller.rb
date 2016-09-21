@@ -18,6 +18,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def failure
+    set_flash_message(:notice, :failure)
     redirect_to root_path
   end
 
