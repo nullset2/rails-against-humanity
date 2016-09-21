@@ -2,3 +2,7 @@
 
 <h1>Rails Against Humanity</h1>
 
+<% if user_signed_in? %>
+    <h2>Games you're in:</h2>
+    <%= link_to "Start a new game", new_game_path, class: "btn btn-outline-success" %>
+<% end %>

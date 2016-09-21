@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
 
   resources :answers, only: [:index, :show]
-  resources :games, only: [:create], param: :slug
+  resources :games, only: [:new, :create], param: :slug
 
   root to: "home#index"
 end
