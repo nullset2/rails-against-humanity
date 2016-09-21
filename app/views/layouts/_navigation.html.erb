@@ -1,7 +1,11 @@
 <nav class="navbar navbar-full navbar-dark bg-inverse">
-  <a class="navbar-brand" href="#">RAH</a>
-  <ul class="nav navbar-nav">
-  <div class="pull-xs-right">
-      <div>Sign in: <a class="btn btn-outline-secondary">Google</a> <a class="btn btn-outline-secondary">Facebook</a> <a class="btn btn-outline-secondary">Twitter</a></div>
-  </form>
+    <a class="navbar-brand" href="#">RAH</a>
+    <ul class="nav navbar-nav">
+        <div class="pull-xs-right">
+            <div>Sign in: <%= link_to "Google", user_google_oauth2_omniauth_authorize_path, class: "btn btn-outline-secondary"%>
+            <%= link_to "Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-outline-secondary"%>
+            <%= link_to "Twitter", user_twitter_omniauth_authorize_path, class: "btn btn-outline-secondary"%>
+            </div>
+        </div>
+    </ul>
 </nav>
