@@ -11,9 +11,4 @@ class OmniauthCallbacksControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get twitter" do
-    get omniauth_callbacks_twitter_url
-    assert_response :success
-  end
-
 end
