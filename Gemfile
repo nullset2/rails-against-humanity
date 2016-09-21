@@ -17,6 +17,7 @@ gem 'omniauth-google-oauth2'
 gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'apartment'
 gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'
 gem 'pry-rails'
 gem 'pry-byebug'
 
